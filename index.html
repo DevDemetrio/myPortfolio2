@@ -5,50 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Desenvolvedor front-end, trabalho com HTML semântico, mobile first."
+      content="Demetrio do Nascimento Lopes, é Bacharel em Sistemas De Informação, e Desenvolvedor front-end Jr"
     />
     <meta
       name="keywords"
       content="Desenvolvedor front-end, web master, HTML, CSS, JavaScript, React, html semântico, mobile first, desenvolvedor Jr, freelance web, freelance desenvolvedor, desenvolvedor freelance web"
     />
     <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="/assets/css/styled.css" />
     <title>Desenvolvedor Front-end</title>
   </head>
   <body>
+    <header class="header__container">
+      <h1 class="header__title"><span>{)emétrio</span></h1>
+      <nav class="header__navegation">
+        <ul class="header__navegation__link">
+          <li>início</li>
+          <li>stacks</li>
+          <li>projetos</li>
+          <li>certificados</li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
-      <header>
-        <nav>
-          <h1><span>{)emétrio</span></h1>
-          <ul>
-            <li>início</li>
-            <li>stacks</li>
-            <li>projetos</li>
-            <li>certificados</li>
-          </ul>
-        </nav>
-      </header>
       <section class="banner">
         <div class="banner__phrase">
-          Transformando Ideias em <span>Realidade</span> Digital
+          <h2>Transformando Ideias em <span>Realidade</span> Digital</h2>
         </div>
         <div class="banner__image">
           <img
-            src=""
+            src="./assets/images/mobile/html.png"
             alt="Desenvolvedor Demétrio, está usando óculos de leitura, relogico, uma camisa preta. A foto no geral, mostra apenas o desenvolvedor como se ele estivesse saindo do escuro"
           />
         </div>
       </section>
-      <section class="description">
+      <section class="description" aria-labelledby="Apresentação">
         <div>
-          <p>
+          <p id="Apresentação">
             Oi, me chamo Demétrio. Sou Bacharel em Sistema de Informação, e
             hoje, estou me aperfeiçoando na área de Desenvolvedor Front-end Web.
           </p>
         </div>
       </section>
-      <section class="stacks">
+      <section class="stacks" aria-labelledby="Conhecimentos Técnicos">
         <h2>Stacks</h2>
-        <div class="stacks__icons">
+        <div class="stacks__icons" id="Conhecimentos Técnicos">
           <img src="" alt="Icone HTML5" />
           <img src="" alt="Icone CSS3" />
           <img src="" alt="Icone JavaScript" />
@@ -57,13 +59,13 @@
           <img src="" alt="Icone Git" />
         </div>
       </section>
-      <section>
+      <section class="projetos" aria-labelledby="Projetos Pessoais">
         <h2>Projetos Pessoais</h2>
-        <article></article>
+        <article id="Projetos Pessoais"></article>
       </section>
-      <section>
+      <section class="certificado" aria-labelledby="Certificados">
         <h2>Certificados</h2>
-        <article></article>
+        <article id="Certificados"></article>
       </section>
     </main>
     <footer>
