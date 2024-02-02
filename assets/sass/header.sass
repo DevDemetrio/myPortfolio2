@@ -1,4 +1,8 @@
 .header__container
+    display: flex
+    align-items: center
+    justify-content: space-between
+
     background: $primary-color
     border-bottom: 1px solid $gray-datail
 
@@ -8,8 +12,28 @@
     & span
         color: $green-detail
 
+.header__navegation
+    & button 
+        display: block
+
 .header__navegation__link
     display: flex
+    gap: 10px
 
     & li 
         color: $letter-color
+
+        & a
+            display: block
+            padding: .3rem
+
+#nav.active .header__navegation__link
+    display: flex
+
+@media (max-width: 768px)
+    .header__navegation
+        & button 
+            display: block
+
+    .header__navegation__link
+        display: block

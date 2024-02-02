@@ -15,18 +15,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/myPortfolio2/assets/css/steles.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
     <title>Desenvolvedor Front-end</title>
   </head>
   <body>
-    <header class="header__container">
+    <header class="header__container container__mobile">
       <h1 class="header__title"><span>{)</span>emétrio</h1>
-      <nav class="header__navegation">
+      <nav class="header__navegation" id="nav">
+        <button id="btn__mobile">Menu</button>
         <ul class="header__navegation__link">
-          <li>início</li>
-          <li>stacks</li>
-          <li>projetos</li>
-          <li>certificados</li>
+          <li><a href="">início</a></li>
+          <li><a href="">stacks</a></li>
+          <li><a href="">projetos</a></li>
+          <li><a href="">certificados</a></li>
         </ul>
       </nav>
     </header>
@@ -85,5 +86,6 @@
         </ul>
       </nav>
     </footer>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>
