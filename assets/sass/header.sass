@@ -16,24 +16,41 @@
     & button 
         display: block
 
+
 .header__navegation__link
-    display: flex
+    display: block
+    position: absolute
+    width: 100%
+    top: 70px
+    right: 0
+    background: #e7e7e7
+    height: 0
+    transition: .6s
+    visibility: hidden
+    overflow-y: hidden
+    z-index: 1000
+
     gap: 10px
 
     & li 
         color: $letter-color
 
         & a
-            display: block
+           /*display: none*/ 
+          
             padding: .3rem
 
 #nav.active .header__navegation__link
-    display: flex
+    visibility: visible
+    overflow-y: auto 
+    height: calc(100vh - 70px)
+    
 
-@media (max-width: 768px)
-    .header__navegation
-        & button 
-            display: block
 
-    .header__navegation__link
-        display: block
+.header__navegation__link
+    & li
+     padding: 1rem 0
+     border-bottom: 2px solid rgba(0, 0, 0, .05)
+
+
+   
