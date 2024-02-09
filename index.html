@@ -22,8 +22,11 @@
     <header class="header__container container__mobile">
       <h1 class="header__title"><span>{)</span>emétrio</h1>
       <nav class="header__navegation" id="nav">
-        <button id="btn__mobile">Menu</button>
-        <ul class="header__navegation__link container__mobile">
+        <button id="btn__mobile" aria-abel="Abrir Menu" aria-haspopup="true"aria-controls="header__navegation__link" aria-expanded="false">Menu
+
+          <span id="hamburger"></span>
+        </button>
+        <ul class="header__navegation__link container__mobile" role="menu">
           <li><a href="">início</a></li>
           <li><a href="">stacks</a></li>
           <li><a href="">projetos</a></li>

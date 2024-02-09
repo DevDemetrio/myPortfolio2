@@ -53,4 +53,37 @@
      border-bottom: 2px solid rgba(0, 0, 0, .05)
 
 
+#btn__mobile
+    display: flex
+    padding: .5rem 1rem
+    font-size: 1rem
+    border: none
+    
+    cursor: pointer
+    gap: .5rem
+
    
+#hamburger
+    display: block
+    width: 20px
+    border-top: 2px solid
+
+    &::after, &::before
+        content: ''
+        display: block
+        width: 20px
+        height: 2px
+        background: currentColor
+        margin-top: 5px
+        transition: .3s
+        position: relative
+
+#nav.active #hamburger
+    border-top-color: transparent
+
+#nav.active #hamburger::before
+    transform: rotate(135deg)
+
+#nav.active #hamburger::after
+    transform: rotate(-135deg)
+    top: -7px
