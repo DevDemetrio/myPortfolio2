@@ -12,6 +12,7 @@
 }
 
 .header__title {
+  font-size: 18px;
   color: #FEFEFE;
 }
 .header__title span {
@@ -40,8 +41,17 @@
   color: #FEFEFE;
 }
 .header__navegation__link li a {
-  /*display: none*/ 
-  * padding: .3rem */
+  padding: 0.3rem;
+}
+
+@media (min-width: 768px) {
+  .header__navegation__link {
+    display: block;
+    position: fixed;
+    width: 100%;
+    visibility: visible;
+    color: #fff;
+  }
 }
 
 #nav.active .header__navegation__link {
@@ -59,6 +69,7 @@
   display: flex;
   padding: 0.5rem 1rem;
   font-size: 1rem;
+  background: none;
   border: none;
   cursor: pointer;
   gap: 0.5rem;
@@ -67,6 +78,7 @@
 #hamburger {
   display: block;
   width: 20px;
+  color: #FEFEFE;
   border-top: 2px solid;
 }
 #hamburger::after, #hamburger::before {
@@ -91,6 +103,12 @@
 #nav.active #hamburger::after {
   transform: rotate(-135deg);
   top: -7px;
+}
+
+@media (min-width: 768px) {
+  #hamburger {
+    display: none;
+  }
 }
 
 body, header, main, nav, div, section, footer, ul, li {
