@@ -5,6 +5,8 @@
     background: $primary-color
     border-bottom: 1px solid $gray-datail
 
+
+
 .header__title
     font-size: 18px
     color: $letter-color
@@ -40,11 +42,16 @@
 
 .header__navegation__link
     @include mobile
-        display: block
-        position: fixed
+        display: flex
+        position: static
+        right: 20px
         width: 100%
-        visibility: visible
-        color: #fff
+       
+        
+
+        & li a 
+            color: #ffffff
+
 
 #nav.active .header__navegation__link
     visibility: visible
