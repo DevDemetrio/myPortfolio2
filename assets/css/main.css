@@ -22,6 +22,11 @@
 .header__navegation button {
   display: block;
 }
+@media (min-width: 768px) {
+  .header__navegation button {
+    display: none;
+  }
+}
 
 .header__navegation__link {
   display: block;
@@ -47,12 +52,17 @@
 @media (min-width: 768px) {
   .header__navegation__link {
     display: flex;
+    align-items: center;
     position: static;
-    right: 20px;
-    width: 100%;
+    visibility: visible;
+    overflow-y: visible;
+    background: none;
+  }
+  .header__navegation__link li {
+    color: #000000;
   }
   .header__navegation__link li a {
-    color: #ffffff;
+    color: #FFFFFF;
   }
 }
 
@@ -66,7 +76,9 @@
   padding: 1rem 0;
   border-bottom: 2px solid rgba(0, 0, 0, 0.05);
 }
-
+.header__navegation__link li {
+  padding: 0px;
+}
 #btn__mobile {
   display: flex;
   padding: 0.5rem 1rem;
@@ -75,6 +87,11 @@
   border: none;
   cursor: pointer;
   gap: 0.5rem;
+}
+@media (min-width: 768px) {
+  #btn__mobile {
+    display: none;
+  }
 }
 
 #hamburger {
@@ -113,7 +130,7 @@
   }
 }
 
-body, header, main, nav, div, section, footer, ul, li {
+body, header, main, nav, div, section, footer, ul, li, a, span, h1 {
   margin: 0;
   padding: 0;
 }
