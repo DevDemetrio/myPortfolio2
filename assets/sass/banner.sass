@@ -1,0 +1,36 @@
+.main__bg
+    background: #06050B
+
+
+.banner
+  display: grid
+  grid-template-columns: 1fr
+
+  @include mobile
+        grid-template-columns: 2fr 1fr
+        padding-top: 8rem
+
+        .imagen__mobile
+            display: none
+
+        .imagen__desktop
+            display: block
+
+ 
+
+  & img
+       margin-left: auto
+       margin-right: auto
+
+.imagen__desktop
+    display: none
+
+
+.banner__phrase
+    padding: 3.25rem 1rem
+    text-align: center
+    color: #FEFEFE
+
+    & span
+        color: #00FFB9
+

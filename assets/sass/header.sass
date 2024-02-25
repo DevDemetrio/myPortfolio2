@@ -1,9 +1,12 @@
+.header__bg
+    background: $primary-color
+    border-bottom: 1px solid $gray-datail
+
 .header__container
     display: flex
     align-items: center
     justify-content: space-between
-    background: $primary-color
-    border-bottom: 1px solid $gray-datail
+    
 
 .header__title
     font-size: 18px
@@ -27,7 +30,7 @@
     width: 100%
     top: 70px
     right: 0
-    background: #e7e7e7
+    background: #FFFFFF
     height: 0
     transition: .6s
     visibility: hidden
@@ -39,7 +42,10 @@
         color: $letter-color
 
         & a          
-            padding: .3rem
+            padding: .5rem 0
+            font-size: 18px
+            color: #000000
+           
 
 .header__navegation__link
     @include mobile
@@ -118,3 +124,7 @@
 #hamburger 
     @include mobile
         display: none
+
+        
+
+

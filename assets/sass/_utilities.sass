@@ -1,7 +1,7 @@
 //MIXINS
 @mixin reset 
     
-    body, header, main, nav,div, section, footer, ul, li, a, span, h1
+    body, header, main, nav,div, section, footer, ul, li, a, span, h1, h2
        margin: 0
        padding: 0  
     *
@@ -15,9 +15,18 @@
     li
         list-style: none
 
+    img
+        display: block
+        
 .container__mobile
     height: 70px
     padding: 8px 16px 8px 16px
+
+.container__desktop
+    max-width: 1440px
+    margin-left: auto
+    margin-right: auto
+
 
 
 //Mobile
