@@ -6,23 +6,42 @@
   display: grid
   grid-template-columns: 1fr
 
-  @include mobile
+  @include desktop
         grid-template-columns: 2fr 1fr
-        padding-top: 8rem
+        padding-top: 4rem
+     
+        .imagen__desktop
+            display: block
 
         .imagen__mobile
             display: none
 
-        .imagen__desktop
+        .imagen__tabler
+            display: none
+
+
+
+  @include tablet
+        grid-template-columns: 1fr
+       
+        .imagen__tablet
             display: block
 
- 
+        .imagen__mobile
+            display: none
 
+
+        .imagen__desktop
+            display: none
+         
   & img
        margin-left: auto
        margin-right: auto
 
 .imagen__desktop
+    display: none
+
+.imagen__tablet
     display: none
 
 
