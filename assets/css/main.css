@@ -31,8 +31,8 @@
 .header__navegation button {
   display: block;
 }
-@media (min-width: 1024px) {
-  .header__navegation button {
+@media (min-width: 700px) {
+  .header__navegation {
     display: none;
   }
 }
@@ -55,12 +55,11 @@
   color: #FEFEFE;
 }
 .header__navegation__link li a {
-  padding: 0.5rem 0;
   font-size: 18px;
   color: #000000;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 700px) {
   .header__navegation__link {
     display: flex;
     align-items: center;
@@ -70,7 +69,7 @@
     background: none;
   }
   .header__navegation__link li {
-    color: #000000;
+    color: #f8e5e5;
   }
   .header__navegation__link li a {
     color: #FFFFFF;
@@ -99,7 +98,7 @@
   cursor: pointer;
   gap: 0.5rem;
 }
-@media (min-width: 1024px) {
+@media (min-width: 700px) {
   #btn__mobile {
     display: none;
   }
@@ -135,7 +134,7 @@
   top: -7px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 700px) {
   #hamburger {
     display: none;
   }
@@ -149,46 +148,37 @@
   display: grid;
   grid-template-columns: 1fr;
 }
-@media (min-width: 1024px) {
-  .banner {
-    grid-template-columns: 2fr 1fr;
-    padding-top: 4rem;
-  }
-  .banner .imagen__desktop {
-    display: block;
-  }
-  .banner .imagen__mobile {
-    display: none;
-  }
-  .banner .imagen__tabler {
-    display: none;
-  }
+.banner .imagen__desktop {
+  display: none;
+}
+.banner .imagen__tablet {
+  display: none;
 }
 @media (min-width: 500px) {
-  .banner {
-    grid-template-columns: 1fr;
-  }
   .banner .imagen__tablet {
     display: block;
   }
+  .banner .imagen__desktop {
+    display: none;
+  }
   .banner .imagen__mobile {
     display: none;
   }
-  .banner .imagen__desktop {
+}
+@media (min-width: 700px) {
+  .banner {
+    grid-template-columns: 2fr 1fr;
+  }
+  .banner .imagen__tablet {
     display: none;
+  }
+  .banner .imagen__desktop {
+    display: block;
   }
 }
 .banner img {
   margin-left: auto;
   margin-right: auto;
-}
-
-.imagen__desktop {
-  display: none;
-}
-
-.imagen__tablet {
-  display: none;
 }
 
 .banner__phrase {

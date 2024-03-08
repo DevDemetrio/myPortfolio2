@@ -19,9 +19,8 @@
     & button 
         display: block
     
-    & button 
-        @include desktop
-            display: none
+    @include desktop
+        display: none
 
 
 .header__navegation__link
@@ -37,15 +36,14 @@
     overflow-y: hidden
     z-index: 1000
     gap: 10px
-
+ 
     & li 
-        color: $letter-color
-
+        color: #FEFEFE
+        
         & a          
-            padding: .5rem 0
             font-size: 18px
             color: #000000
-           
+            
 
 .header__navegation__link
     @include desktop
@@ -55,13 +53,12 @@
         visibility: visible
         overflow-y: visible
         background: none
-        & li
-            color: #000000
-            
-        & li a 
-            color: #FFFFFF
         
-  
+        & li
+            color: #f8e5e5
+        & li a
+            color: #FFFFFF
+
 
 
 #nav.active .header__navegation__link
@@ -69,7 +66,6 @@
     overflow-y: auto 
     height: calc(100vh - 70px)
     
-
 
 .header__navegation__link
     & li
@@ -79,6 +75,7 @@
     & li
      @include desktop
      padding: 0px
+
 
 
 #btn__mobile
@@ -124,6 +121,8 @@
 #hamburger 
     @include desktop
         display: none
+
+
 
         
 
