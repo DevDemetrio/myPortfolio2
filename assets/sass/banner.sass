@@ -26,8 +26,12 @@
        
   @include desktop
         grid-template-columns: 2fr 1fr
+        align-items: center
+        max-width: 1010px
+        margin-left: auto
+        margin-right: auto
+        padding-top: 104px
    
-
         .imagen__tablet
             display: none
 
@@ -38,9 +42,6 @@
        margin-left: auto
        margin-right: auto
 
-
-
-
 .banner__phrase
     padding: 3.25rem 1rem
     text-align: center
@@ -48,4 +49,8 @@
 
     & span
         color: #00FFB9
+
+    & 
+      @include desktop
+        font-size: 30px
 

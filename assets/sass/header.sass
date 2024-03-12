@@ -15,12 +15,13 @@
     & span
         color: $green-detail
 
-.header__navegation
-    & button 
-        display: block
-    
+.header__title
     @include desktop
-        display: none
+        font-size: 32px
+
+.header__title
+    @include tablet
+        font-size: 28px
 
 
 .header__navegation__link
@@ -43,8 +44,22 @@
         & a          
             font-size: 18px
             color: #000000
-            
 
+.header__navegation__link
+    & li
+     padding: 1rem 0
+     border-bottom: 2px solid rgba(0, 0, 0, .05)
+
+    & li
+     @include desktop
+     padding: 0px
+    
+    & li a
+        @include desktop
+            font-size: 24px
+     
+
+            
 .header__navegation__link
     @include desktop
         display: flex
@@ -65,17 +80,6 @@
     visibility: visible
     overflow-y: auto 
     height: calc(100vh - 70px)
-    
-
-.header__navegation__link
-    & li
-     padding: 1rem 0
-     border-bottom: 2px solid rgba(0, 0, 0, .05)
-
-    & li
-     @include desktop
-     padding: 0px
-
 
 
 #btn__mobile
