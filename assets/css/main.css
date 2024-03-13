@@ -3,6 +3,10 @@
   padding: 8px 16px 8px 16px;
 }
 
+.container__mobile__teste {
+  padding: 8px 16px 8px 16px;
+}
+
 .container__desktop {
   max-width: 1160px;
   margin-left: auto;
@@ -213,7 +217,7 @@
   width: 237px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 42px;
+  padding-top: 150px;
   font-size: 15px;
   color: #ffffff;
 }
@@ -231,6 +235,22 @@
     width: 670px;
     max-width: 50ch;
   }
+}
+
+.stacks h2 {
+  color: #FFFFFF;
+}
+
+.stacks__icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  padding-top: 46px;
+}
+.stacks__icons div {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #00FFB9;
 }
 
 body, header, main, nav, div, section, footer, ul, li, a, span, h1, h2 {
