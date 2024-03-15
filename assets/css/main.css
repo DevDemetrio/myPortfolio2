@@ -182,7 +182,7 @@
   .banner {
     grid-template-columns: 2fr 1fr;
     align-items: center;
-    max-width: 1010px;
+    max-width: 1041px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 104px;
@@ -247,10 +247,25 @@
   gap: 70px;
   padding-top: 46px;
 }
+@media (min-width: 700px) {
+  .stacks__icons {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1041px;
+  }
+}
 .stacks__icons div {
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid #00FFB9;
+  position: relative;
+}
+.stacks__icons div::before {
+  content: "";
+  display: block;
+  width: 110px;
+  height: 117px;
+  top: 10px;
+  position: absolute;
+  background: url("/assets/images/mobile/Rectangle 14(1).svg") no-repeat center;
 }
 
 body, header, main, nav, div, section, footer, ul, li, a, span, h1, h2 {

@@ -8,7 +8,23 @@
   gap: 70px
   padding-top: 46px
 
+  @include desktop
+    grid-template-columns: 1fr 1fr 1fr
+    max-width: 1041px
+
   & div
     display: flex
     justify-content: center
-    border-bottom: 1px solid #00FFB9
+    position: relative
+    
+
+  & div::before
+    content: ''
+    display: block
+    width: 110px
+    height: 117px
+    top: 10px
+    position: absolute
+    background: url('/assets/images/mobile/Rectangle 14(1).svg') no-repeat center
+
+
