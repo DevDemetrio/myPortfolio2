@@ -253,6 +253,11 @@
     max-width: 1041px;
   }
 }
+@media (min-width: 700px) {
+  .stacks__icons .stacks-mobile {
+    display: none;
+  }
+}
 .stacks__icons div {
   display: flex;
   justify-content: center;
@@ -266,6 +271,18 @@
   top: 10px;
   position: absolute;
   background: url("/assets/images/mobile/Rectangle 14(1).svg") no-repeat center;
+}
+
+.stacks-desktop {
+  width: 90px;
+}
+
+#stacks-css {
+  width: 128px;
+}
+
+.stacks-desktop-styled {
+  width: 160px;
 }
 
 body, header, main, nav, div, section, footer, ul, li, a, span, h1, h2 {

@@ -28,10 +28,10 @@
               <span id="hamburger"></span>
             </button>
             <ul class="header__navegation__link container__mobile" role="menu">
-              <li><a href="">início</a></li>
-              <li><a href="">stacks</a></li>
-              <li><a href="">projetos</a></li>
-              <li><a href="">certificados</a></li>
+              <li><a href="/">início</a></li>
+              <li><a href="#stacks">stacks</a></li>
+              <li><a href="#projetos">projetos</a></li>
+              <li><a href="#certificados">certificados</a></li>
             </ul>
           </nav>
     </div>
@@ -72,43 +72,52 @@
           </p>
         </div>
       </section>
-      <section class="stacks container__mobile__teste container__desktop" aria-labelledby="Conhecimentos Técnicos">
+      <section class="stacks container__mobile__teste container__desktop" id="stacks"aria-labelledby="Conhecimentos Técnicos">
             <h2>Experiências</h2>
             <div class="stacks__icons" id="Conhecimentos Técnicos">
               <div>
-                <img src="./assets/images/mobile/html.png" alt="Icone HTML5" />
+                <img class="stacks-mobile" src="./assets/images/mobile/html.png" alt="Icone HTML5" />
+                <img  class="stacks-desktop" id="stacks-html"src="./assets/images/desktop/html-desktop.svg" alt="Icone HTML5" />
+
              </div>
               <div>
-                  <img src="./assets/images/mobile/css.png" alt="Icone CSS3" />
+                  <img class="stacks-mobile" src="./assets/images/mobile/css.png" alt="Icone CSS3" />
+                  <img  class="stacks-desktop-css" id="stacks-css" src="./assets/images/desktop/css-desktop.svg" alt="Icone HTML5" />
              </div>
               <div>
-                 <img src="./assets/images/mobile/js.png" alt="Icone JavaScript" />
+                 <img class="stacks-mobile" src="./assets/images/mobile/js.png" alt="Icone JavaScript" />
+                 <img  class="stacks-desktop" id="stacks-js" src="./assets/images/desktop/js-desktop.svg" alt="Icone HTML5" />
               </div>
               <div>
-              <img src="./assets/images/mobile/typescript.png" alt="Icone TypeScript"/>
+              <img class="stacks-mobile" src="./assets/images/mobile/typescript.png" alt="Icone TypeScript"/>
+              <img  class="stacks-desktop" id="stacks-ts" src="./assets/images/desktop/typescript-desktop.svg" alt="Icone HTML5" />
               </div>
               <div>
-              <img src="./assets/images/mobile/react.png" alt="Icone React" />
+              <img class="stacks-mobile" src="./assets/images/mobile/react.png" alt="Icone React" />
+              <img  class="stacks-desktop" id="stacks-react"src="./assets/images/desktop/react-desktop.svg" alt="Icone HTML5" />
               </div>
               <div>
-              <img src="./assets/images/mobile/git.png" alt="Icone Git" />
+              <img  class="stacks-mobile" src="./assets/images/mobile/git.png" alt="Icone Git" />
+              <img  class="stacks-desktop" id="stacks-git" src="./assets/images/desktop/git-desktop.svg" alt="Icone HTML5" />
               </div>
               <div>
-                <img src="./assets/images/mobile/sass.svg" alt="Icone Git" />
+                <img class="stacks-mobile" src="./assets/images/mobile/sass.svg" alt="Icone Git" />
+                <img  class="stacks-desktop" id="stacks-sass" src="./assets/images/desktop/sass-desktop.svg" alt="Icone HTML5" />
               </div>
               <div>
-                <img src="./assets/images/mobile/styled__component.png" alt="Icone Git" />
+                <img class="stacks-mobile" src="./assets/images/mobile/styled__component.png" alt="Icone Git" />
+                <img  class="stacks-desktop-styled" id="stacks-styled" src="./assets/images/desktop/styled-desktop.svg" alt="Icone HTML5" />
               </div>
             
       </div>
       </section>
-      <section class="projetos" aria-labelledby="Projetos Pessoais">
+      <section class="projetos" id="projetos" aria-labelledby="Projetos Pessoais">
         <h2>Projetos Pessoais</h2>
         <article id="Projetos Pessoais"></article>
       </section>
       <section class="certificado" aria-labelledby="Certificados">
         <h2>Certificados</h2>
-        <article id="Certificados"></article>
+        <article id="certificados"></article>
       </section>
     </main>
     <footer class="baseboard">
