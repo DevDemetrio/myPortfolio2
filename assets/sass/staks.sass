@@ -1,4 +1,5 @@
 .stacks
+  padding-top: 64px
   & h2 
     color: #FFFFFF
 
@@ -16,6 +17,9 @@
     .stacks-mobile
       display: none
 
+    .stacks-desktop
+      display: block
+
   & div
     display: flex
     justify-content: center
@@ -31,6 +35,24 @@
     position: absolute
     background: url('/assets/images/mobile/Rectangle 14(1).svg') no-repeat center
 
+
+
+  @include desktop
+    .stacks__detail
+      position: relative
+
+    .stacks__detail::before
+      content: 'a'
+      display: block
+      color: #FFFFFF
+      width: 110px
+      height: 148px
+      top: 30px
+      position: absolute
+      background: url('/assets/images/mobile/Rectangle 14(1).svg') no-repeat center
+
+
+
 .stacks-desktop
   width: 90px
 
@@ -39,3 +61,6 @@
 
 .stacks-desktop-styled
   width: 160px
+
+.stacks-desktop
+  display: none
