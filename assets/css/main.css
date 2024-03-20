@@ -311,7 +311,23 @@
 }
 
 .projects__bg {
+  padding-top: 128px;
   background: #06050B;
+}
+.projects__bg h2 {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.projects__container {
+  width: 173px;
+  margin-top: 39px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #06050B;
+}
+.projects__container article:nth-child(2) {
+  margin: 17px 0;
 }
 
 body, header, main, nav, div, section, footer, ul, li, a, span, h1, h2 {
