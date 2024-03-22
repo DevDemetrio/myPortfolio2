@@ -283,7 +283,7 @@
     position: relative;
   }
   .stacks__icons .stacks__detail::before {
-    content: "a";
+    content: "";
     display: block;
     color: #FFFFFF;
     width: 110px;
@@ -328,6 +328,16 @@
 }
 .projects__container article:nth-child(2) {
   margin: 17px 0;
+}
+@media (min-width: 500px) {
+  .projects__container {
+    display: grid;
+    width: 700px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
 }
 
 body, header, main, nav, div, section, footer, ul, li, a, span, h1, h2 {
