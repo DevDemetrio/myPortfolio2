@@ -324,7 +324,10 @@
   margin-top: 39px;
   margin-left: auto;
   margin-right: auto;
-  background: #06050B;
+}
+.projects__container article {
+  margin-left: auto;
+  margin-right: auto;
 }
 .projects__container article:nth-child(2) {
   margin: 17px 0;
@@ -332,11 +335,21 @@
 @media (min-width: 500px) {
   .projects__container {
     display: grid;
-    width: 700px;
-    grid-template-columns: 1fr 1fr 1fr;
+    width: 356px;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     gap: 10px;
+  }
+}
+@media (min-width: 700px) {
+  .projects__container {
+    display: grid;
+    width: 346px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
   }
 }
 

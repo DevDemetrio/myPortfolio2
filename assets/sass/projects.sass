@@ -11,16 +11,29 @@
   margin-top: 39px
   margin-left: auto
   margin-right: auto
-  background: #06050B
+
+
+  & article
+    margin-left: auto
+    margin-right: auto
   
   & article:nth-child(2)
       margin: 17px 0
 
   @include tablet
     display: grid
-    width: 700px
-    grid-template-columns: 1fr 1fr 1fr
+    width: 356px
+    grid-template-columns: 1fr 1fr
     justify-content: center
     align-items: center
     gap: 10px
+  
+
+  @include desktop
+    display: grid
+    width: 346px
+    grid-template-columns: 1fr 1fr 1fr
+    justify-content: center
+    align-items: center
+    gap: 30px
 
