@@ -1,131 +1,20 @@
-.container__mobile {
-  height: 70px;
-  padding: 8px 16px 8px 16px;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 10 | /   @include tablet
+ * 11 | |     width: 441px
+ * 12 | |     font-size: 21px
+ * 13 | \     line-height: 1.5
+ *    '
+ *   assets/sass/apresentacao.sass 10:3  @use
+ *   assets/sass/main.sass 3:1           root stylesheet */
 
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #06050B;
-  border-bottom: 1px solid #969696;
-}
-
-.header__title {
-  font-size: 18px;
-  color: #FEFEFE;
-}
-.header__title span {
-  color: #00FFB9;
-}
-
-.header__navegation button {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 10 \2502  \250c    @include tablet\a 11 \2502  \2502      width: 441px\a 12 \2502  \2502      font-size: 21px\a 13 \2502  \2514      line-height: 1.5\a    \2575 \a   assets/sass/apresentacao.sass 10:3  @use\a   assets/sass/main.sass 3:1           root stylesheet";
 }
-
-.header__navegation__link {
-  display: block;
-  position: absolute;
-  width: 100%;
-  top: 70px;
-  right: 0;
-  background: #e7e7e7;
-  height: 0;
-  transition: 0.6s;
-  visibility: hidden;
-  overflow-y: hidden;
-  z-index: 1000;
-  gap: 10px;
-}
-.header__navegation__link li {
-  color: #FEFEFE;
-}
-.header__navegation__link li a {
-  padding: 0.3rem;
-}
-
-@media (min-width: 768px) {
-  .header__navegation__link {
-    position: static;
-    width: 100%;
-    visibility: visible;
-    overflow-y: visible;
-  }
-}
-
-#nav.active .header__navegation__link {
-  visibility: visible;
-  overflow-y: auto;
-  height: calc(100vh - 70px);
-}
-
-.header__navegation__link li {
-  padding: 1rem 0;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-}
-
-#btn__mobile {
-  display: flex;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  gap: 0.5rem;
-}
-
-#hamburger {
-  display: block;
-  width: 20px;
-  color: #FEFEFE;
-  border-top: 2px solid;
-}
-#hamburger::after, #hamburger::before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 2px;
-  background: currentColor;
-  margin-top: 5px;
-  transition: 0.3s;
-  position: relative;
-}
-
-#nav.active #hamburger {
-  border-top-color: transparent;
-}
-
-#nav.active #hamburger::before {
-  transform: rotate(135deg);
-}
-
-#nav.active #hamburger::after {
-  transform: rotate(-135deg);
-  top: -7px;
-}
-
-@media (min-width: 768px) {
-  #hamburger {
-    display: none;
-  }
-}
-
-body, header, main, nav, div, section, footer, ul, li {
-  margin: 0;
-  padding: 0;
-}
-
-* {
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-/*# sourceMappingURL=main.css.map */
