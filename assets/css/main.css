@@ -381,9 +381,16 @@
 .baseboard__navegation__link {
   display: flex;
 }
+.baseboard__navegation__link li:nth-child(1n) {
+  margin-left: 20px;
+}
+.baseboard__navegation__link li a img {
+  width: 20px;
+  height: 20px;
+}
 
 .title__footer {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 body, header, main, nav, div, section, footer, ul, li, a, span, h1, h2, p {
