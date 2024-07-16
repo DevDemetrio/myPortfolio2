@@ -436,6 +436,12 @@
   }
 }
 
+.container__teste {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0 auto;
+}
+
 body, header, main, nav, div, section, footer, ul, li, a, span, h1, h2, p {
   margin: 0;
   padding: 0;
