@@ -238,11 +238,12 @@
 }
 
 .projects__bg {
-  padding-top: 128px;
+  padding-top: 3rem;
   background: #06050B;
 }
 .projects__bg h2 {
   font-size: 18px;
+  margin-bottom: 2rem;
   color: #FFFFFF;
 }
 
@@ -397,8 +398,8 @@
   text-align: center;
 }
 
-.project__description {
-  margin: 1.8125rem auto 0 auto;
+.project__description ul {
+  margin: 0rem 0 2rem 0;
 }
 .project__description a {
   color: white;
@@ -436,7 +437,7 @@
   }
 }
 
-.container__teste {
+.project__information {
   display: grid;
   grid-template-columns: auto;
   margin: 0 auto;
@@ -449,9 +450,18 @@ body, header, main, nav, div, section, footer, ul, li, a, span, h1, h2, p {
 
 * {
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Fira Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Fira Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
 }
-
+* .fira-mono-regular {
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
 a {
   text-decoration: none;
 }
